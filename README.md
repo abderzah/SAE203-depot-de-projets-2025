@@ -1,6 +1,6 @@
 # Instructions pour déposer le projet SAE 2.03
 
-- La livraison de votre projet se fera par le biais d'un [pull-request](https://juanluck.github.io/Introduction-GIT/tp4/)  vers ce référentiel. Si vous avez besoin de vous rappeler comment le faire, visitez [le TP4 du cours d'introduction à git](https://juanluck.github.io/Introduction-GIT/tp4/).
+- La livraison de votre projet se fera par le biais d'un [pull-request](https://abderzah.github.io/Introduction-GIT/tp4/)  vers ce référentiel. Si vous avez besoin de vous rappeler comment le faire, visitez [le TP4 du cours d'introduction à git](https://abderzah.github.io/Introduction-GIT/tp4/).
 
 - Pour memoire, après avoir fait un ```fork``` et puis un ```clone``` du référentiel, créez une nouvelle branche où vous allez apporter les modification. Dans la nouvelle branche entrez dans le dossier ```depot``` et créez un dossier ```EquipeX``` (où le X sera changé par votre numéro d'équipe dans cette SAE).
 

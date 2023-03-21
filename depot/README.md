@@ -1,6 +1,6 @@
 # Structure de ce dossier
 
-Joignez votre dossier d'équipe à ce dossier ```depot``` à l'aide d'un [pull-request](https://juanluck.github.io/Introduction-GIT/tp4/). Le contenu du répertoire **EquipeX** peut servir de modèle pour remplir le README.md respectif de votre équipe.
+Joignez votre dossier d'équipe à ce dossier ```depot``` à l'aide d'un [pull-request](https://abderzah.github.io/Introduction-GIT/tp4/). Le contenu du répertoire **EquipeX** peut servir de modèle pour remplir le README.md respectif de votre équipe.
 
 **Attention !!** : modifiez uniquement et exclusivement le contenu du répertoire de votre équipe pour éviter les conflits.
 

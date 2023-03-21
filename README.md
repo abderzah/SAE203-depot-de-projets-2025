@@ -4,7 +4,7 @@
 
 - Pour memoire, après avoir fait un ```fork``` et puis un ```clone``` du référentiel, créez une nouvelle branche où vous allez apporter les modification. Dans la nouvelle branche entrez dans le dossier ```depot``` et créez un dossier ```EquipeX``` (où le X sera changé par votre numéro d'équipe dans cette SAE).
 
-- Le contenu du répertoire [**depot/EquipeX/**](https://github.com/abderzah/depot-de-projets-SAE203-2023/tree/main/depot/EquipeX) peut servir de modèle pour remplir le ```README.md``` respectif de votre équipe.
+- Le contenu du répertoire [**depot/EquipeX/**](https://github.com/abderzah/depot-de-projets-SAE203-2023/tree/master/depot/EquipeX) peut servir de modèle pour remplir le ```README.md``` respectif de votre équipe.
 
 - Une fois le fichier ```README.md``` terminé, effectuez le ```pull-request```.
 

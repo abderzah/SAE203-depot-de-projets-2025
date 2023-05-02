@@ -1,3 +1,15 @@
+<?php 
+		session_start();
+		$userSaisie = $_SESSION['username'];
+
+		$dbuser = 'review_site';
+		$dbpass = 'password';
+		$conn = new mysqli("localhost", $dbuser, $dbpass, "momentos");
+		$conn->set_charset("utf8");
+
+		if ($conn->connect_error) 
+			echo "erreurrrrrrrrrrrrrrr";
+?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -57,7 +69,7 @@
 						<div>
 							<div>
 								<button type="button" class="flex space-x-2 text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-white" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
-									<p class="mt-[5px] text-sm">NoobMaster69</p>
+									<p class="mt-[5px] text-sm"><?php echo $userSaisie ?></p>
 									<img class="w-8 h-8 rounded-full" src="./img/default_icon.png" alt="">
 								</button>
 							</div>
@@ -88,29 +100,35 @@
 
 				<!-- Drive grid -->
 				<div class="grid grid-cols-1 mt-8 gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
-					
-					<!-- Layout video -->
-					<div class="group">
-						<div class="w-full overflow-hidden bg-gray-900 rounded-lg aspect-h-1 aspect-w-1 xl:aspect-h-8 xl:aspect-w-7">
-							<a href="#">
-								<img src="http://img.youtube.com/vi/bf-MNqHjZHU/mqdefault.jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="object-cover object-center w-full h-full group-hover:opacity-90">
-							</a>
-						</div>
 
-						<div class="flex pt-1.5 space-x-4 align-middle">
-							<a href="#">
-								<h3 class="pr-6 text-sm text-gray-700 group-hover:text-gray-900">Je vais faire BÛCHERON (Pokémon Jesus Challenge)</h3>
-							</a>
+					<?php
+						$sql = "SELECT * FROM VPERSO p join VIDEOS v on v.id = p.id WHERE username = '" . $userSaisie . "';";
 
-							<button class="pr-2 text-gray-500 md:opacity-0 group-hover:opacity-100 hover:text-red-600" id="options-button" aria-expanded="true" aria-haspopup="true">
-								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-									<path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
-									<path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
-								</svg>
-							</button>
-							<div class="inline-flex items-center px-2 py-1 text-xs font-medium text-gray-600 rounded-md md:my-auto h-fit w-fit bg-gray-50 ring-1 ring-inset ring-gray-500/10">Public</div>
-						</div>
-					</div>
+						$result = $conn->query($sql);
+						if ($result->num_rows > 0)
+						{
+							while ($row = $result->fetch_assoc()) 
+							{
+								echo '
+								<div class="group">
+									<div class="w-full overflow-hidden bg-gray-900 rounded-lg aspect-h-1 aspect-w-1 xl:aspect-h-8 xl:aspect-w-7">
+										<a href="'. $row["lien"]. '">
+											<img src="http://img.youtube.com/vi/' .substr($row["lien"],32). '/mqdefault.jpg" class="object-cover object-center w-full h-full group-hover:opacity-90">
+										</a>
+									</div>
+			
+									<div class="flex pt-1.5 space-x-4 align-middle">
+										<a href="'. $row["lien"]. '">
+											<h3 class="pr-6 text-sm text-gray-700 group-hover:text-gray-900">' .$row["nom"] . '</h3>
+										</a>
+			
+										<div class="inline-flex items-center px-2 py-1 text-xs font-medium text-gray-600 rounded-md md:my-auto h-fit w-fit bg-gray-50 ring-1 ring-inset ring-gray-500/10">Private</div>
+									</div>
+								</div>
+								';
+							}
+						}
+					?>
 
 
 
@@ -123,23 +141,3 @@
 
 	</body>
 </html>
-
-
-
-
-<!--  Limite de lignes
-
-<?php
-$s = "In the beginning there was a tree.";
-$max_length = 10;
-
-if (strlen($s) > $max_length)
-{
-   $offset = ($max_length - 3) - strlen($s);
-   $s = substr($s, 0, strrpos($s, ' ', $offset)) . '...';
-}
-
-echo $s;
-?>
-
--->

@@ -3,6 +3,7 @@
 	<body>
 		<?php
 
+		session_start();
 		$dbuser = 'review_site';
 		$dbpass = 'password';
 		$conn = new mysqli("localhost", $dbuser, $dbpass, "momentos");
@@ -26,13 +27,17 @@
 
 		if ($queryArray == NULL) 
 		{
-			$sql = "INSERT INTO USERS VALUES ( '" . $userSaisi . "' , '" . $mdpSaisi . "')";
-			if (! $conn->query($sql)) {
-				echo "Erreur : " . $conn->error;
-			}
+			header("Location: /src/login_simple_error.html");
+			exit();
+		}
+		else
+		{
+			$_SESSION['username'] = $userSaisi;
+			header("Location: /src/drive_simple.php");
+			exit();
 		}
 		
-		// Requete select tout from users
+		/*// Requete select tout from users
 		$sql = "SELECT * FROM USERS;";
 
 		$result = $conn->query($sql);
@@ -42,7 +47,7 @@
 			{
 				echo "username : " . $row["username"]. "password : " . $row["mdp"]. "<br>";
 			}
-		}
+		}*/
 
 	
 		?>

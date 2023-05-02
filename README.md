@@ -10,7 +10,7 @@
 
 **Attention !!** : modifiez uniquement et exclusivement le contenu du répertoire de votre équipe pour éviter les conflits.
 
-- Une fois les pull-requests de toutes les équipes complétés, la structure du répertoire [**depot**](https://github.com/abderzah/depot-de-projets-SAE203-2023/tree/main/depot) devrait être la suivante : 
+- Une fois les pull-requests de toutes les équipes complétés, la structure du répertoire [**depot**](https://github.com/abderzah/depot-de-projets-SAE203-2023/tree/master/depot) devrait être la suivante : 
 
 
 ```shell

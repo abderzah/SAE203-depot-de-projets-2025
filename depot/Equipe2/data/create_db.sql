@@ -1,29 +1,32 @@
-CREATE DATABASE momentos;
+CREATE DATABASE IF NOT EXISTS momentos;
 
 USE momentos;
 
-drop table if EXISTS USERS;
-create table USERS (
+CREATE TABLE IF NOT EXISTS USERS (
     username VARCHAR(50) PRIMARY KEY NOT NULL,
     mdp TEXT NOT NULL,
     UNIQUE(username)
 );
 
-drop table if EXISTS VIDEOS;
-create table VIDEOS (
-    id      INT PRIMARY KEY AUTO_INCREMENT,
+CREATE TABLE IF NOT EXISTS VIDEOS (
+    id_vid      INT PRIMARY KEY AUTO_INCREMENT,
     nom     TEXT NOT NULL,
     lien    VARCHAR(100) NOT NULL,
     UNIQUE(lien)
 );
 
-drop table if EXISTS VPERSO;
-create table VPERSO (
+CREATE TABLE IF NOT EXISTS VPERSO (
     username    VARCHAR(50)  REFERENCES USERS(username),
-    lien        VARCHAR(100) REFERENCES VIDEOS(lien),
+    id_vid          INT REFERENCES VIDEOS(id_vid),
     PRIMARY KEY (username, lien )
 );
 
+INSERT INTO USERS
+VALUES ( 'momo','password');
+INSERT INTO USERS
+VALUES ( 'axel','html');
+INSERT INTO USERS
+VALUES ( 'martin','queque');
 
 
 GRANT ALL ON momentos.* to review_site@localhost IDENTIFIED BY 'password';

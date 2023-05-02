@@ -58,8 +58,8 @@
 						<div class="hidden sm:ml-6 sm:block">
 							<div class="flex ml-8 space-x-4">
 								<!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-								<a href="#" class="h-full px-3 py-2 text-sm font-medium text-white bg-indigo-600 border-b-2 rounded-md" aria-current="page">Espace personnel</a>
-								<a href="./drive_simple_public.php" class="px-3 py-2 text-sm font-medium text-gray-600 hover:text-gray-900">Espace public</a>
+								<a href="./drive_simple.php" class="px-3 py-2 text-sm font-medium text-gray-600 hover:text-gray-900">Espace personnel</a>
+								<a href="#" class="h-full px-3 py-2 text-sm font-medium text-white bg-indigo-600 border-b-2 rounded-md" aria-current="page">Espace public</a>
 							</div>
 						</div>
 					</div>
@@ -85,8 +85,8 @@
 				<!-- Header -->
 				<div class="flex justify-between">
 					<div class="md:flex md:space-x-4">
-						<h2 class="text-2xl font-bold leading-7 text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight">Mon espace personnel</h2>
-						<p class="text-sm text-gray-500 md:relative -bottom-3">Enregistrez vos liens de vidéos personnelles, ou que vous voulez simplement garder.</p>
+						<h2 class="text-2xl font-bold leading-7 text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight">Espace Publique</h2>
+						<p class="text-sm text-gray-500 md:relative -bottom-3">Toutes les vidéos enregistrés par les personnes de la communauté</p>
 					</div>
 				</div>
 
@@ -94,7 +94,7 @@
 				<div class="grid grid-cols-1 mt-8 gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
 
 					<?php
-						$sql = "SELECT * FROM VPERSO p join VIDEOS v on v.id = p.id WHERE username = '" . $userSaisie . "';";
+						$sql = "SELECT * FROM VIDEOS;";
 
 						$result = $conn->query($sql);
 						if ($result->num_rows > 0)
@@ -114,7 +114,7 @@
 											<h3 class="pr-6 text-sm text-gray-700 group-hover:text-gray-900">' .$row["nom"] . '</h3>
 										</a>
 			
-										<div class="inline-flex items-center px-2 py-1 text-xs font-medium text-gray-600 rounded-md md:my-auto h-fit w-fit bg-gray-50 ring-1 ring-inset ring-gray-500/10">Private</div>
+										<div class="inline-flex items-center px-2 py-1 text-xs font-medium text-gray-600 rounded-md md:my-auto h-fit w-fit bg-gray-50 ring-1 ring-inset ring-gray-500/10">Public</div>
 									</div>
 								</div>
 								';

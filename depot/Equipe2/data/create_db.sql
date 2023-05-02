@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS USERS (
 );
 
 CREATE TABLE IF NOT EXISTS VIDEOS (
-    id_vid      INT PRIMARY KEY AUTO_INCREMENT,
+    id      INT PRIMARY KEY AUTO_INCREMENT,
     nom     TEXT NOT NULL,
     lien    VARCHAR(100) NOT NULL,
     UNIQUE(lien)
@@ -17,8 +17,8 @@ CREATE TABLE IF NOT EXISTS VIDEOS (
 
 CREATE TABLE IF NOT EXISTS VPERSO (
     username    VARCHAR(50)  REFERENCES USERS(username),
-    id_vid          INT REFERENCES VIDEOS(id_vid),
-    PRIMARY KEY (username, lien )
+    id          INT          REFERENCES VIDEOS(id),
+    PRIMARY KEY (username, id )
 );
 
 INSERT INTO USERS

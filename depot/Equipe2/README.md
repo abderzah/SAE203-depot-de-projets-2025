@@ -20,6 +20,6 @@ _Momentos est un site sous forme de "drive", permettant à des utilisateurs de s
 [Lien de la présentation](https://pastequecarre.github.io/docker-sae203/)
 
 
-## Lien vers le dépôt github du projet pour voir notre projet
+## Lien vers le dépôt github du projet 
 
 [Lien du dépôt](https://github.com/PastequeCarre/docker-sae203)

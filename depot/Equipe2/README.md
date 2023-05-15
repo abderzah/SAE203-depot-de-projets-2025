@@ -15,11 +15,11 @@ _Momentos est un site sous forme de "drive", permettant à des utilisateurs de s
 - A1 | BUREAUX Axel
 
 
-## Lien vers le site web
+## Lien vers le site web qui explique notre projet
 
 [Lien de la présentation](https://pastequecarre.github.io/docker-sae203/)
 
 
-## Lien vers le dépôt github du projet
+## Lien vers le dépôt github du projet pour voir notre projet
 
 [Lien du dépôt](https://github.com/PastequeCarre/docker-sae203)

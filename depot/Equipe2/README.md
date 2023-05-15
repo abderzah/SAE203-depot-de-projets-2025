@@ -1,25 +1,25 @@
-# Projet SAE 2.03 Equipe X
-_(Changez la X par votre numéro d'équipe)_
+# Projet SAE 2.03 Equipe 02
+
 
 ## Titre du projet
-_(Le titre doit être court et descriptif)_
 
-- Installation d'un service Apache + MariaDB + PHP avec docker
+_Momentos est un site sous forme de "drive", permettant à des utilisateurs de stocker des liens vidéos facilement tout en permettant un affichage public. Cette première version permet de se connecter à un compte et d'afficher les vidéos privés/publiques._
+
+- Ce projet permet d'apprendre l'installation d'un service, tel que Momentos, sur un
+
 
 ## Membres de l'équipe
-_(**Format :** Demi-groupe - NOM Prénom)_
 
-- E2 - JIMÉNEZ Juanlu
-- E2 - COLIN Jean-Yves
-- E2 - DUFLO Hugues
+- A2 | MARROUCHE Mohamad
+- A2 | QUEVAL Martin
+- A1 | BUREAUX Axel
 
-## Liens vers le site web du projet
-_(Le liens doit être ```https://<votre-utilisateur-github>.github.io/docker-sae203/```)_
 
-[docker-sae203](https://abderzah.github.io/lampDocker/)
+## Lien vers le site web
 
-## Liens vers le dépôt github du projet
-_(Le liens doit être ```https://github.com/<votre-utilisateur-github>/docker-sae203/```)_
+[Lien de la présentation](https://pastequecarre.github.io/docker-sae203/)
 
-[docker-sae203](https://github.com/abderzah/lampDocker)
 
+## Lien vers le dépôt github du projet
+
+[Lien du dépôt](https://github.com/PastequeCarre/docker-sae203)

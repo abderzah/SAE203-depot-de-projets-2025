@@ -1,10 +1,9 @@
 # Projet SAÉ 2.03 - Équipe 6
 ## Titre du projet
 
-- Installation d'un serveur TCP java pour chat multi-utilisateurs.
+- Installation d'un serveur TCP java pour un chat multi-utilisateurs.
 
 ## Membres de l'équipe
-_(**Format :** Demi-groupe - NOM Prénom)_
 
 - A2 - ROCHE Gabriel
 

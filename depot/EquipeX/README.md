@@ -1,20 +1,25 @@
-# Projet SAE 2.03 Equipe 13
+# Projet SAE 2.03 Equipe X
+_(Changez la X par votre numéro d'équipe)_
 
-## Morpion en local fait avec java avec docker
+## Titre du projet
+_(Le titre doit être court et descriptif)_
 
 - Installation d'un service Apache + MariaDB + PHP avec docker
 
 ## Membres de l'équipe
+_(**Format :** Demi-groupe - NOM Prénom)_
 
-- B2 - LECARPENTIER Luc
-- B2 - PORET Mathys
-- B1 - CARON Antoine
+- E2 - ZAHOUR Abderrazak
+- E2 - COLIN Jean-Yves
+- E2 - DUFLO Hugues
 
 ## Liens vers le site web du projet
+_(Le liens doit être ```https://<votre-utilisateur-github>.github.io/docker-sae203/```)_
 
-[docker-sae203](https://Antoine-CARON.github.io/lampDocker/)
+[docker-sae203](https://abderzah.github.io/lampDocker/)
 
 ## Liens vers le dépôt github du projet
+_(Le liens doit être ```https://github.com/<votre-utilisateur-github>/docker-sae203/```)_
 
-[docker-sae203](https://github.com/Antoine-CARON/lampDocker)
+[docker-sae203](https://github.com/abderzah/lampDocker)
 

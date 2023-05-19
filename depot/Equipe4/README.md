@@ -10,7 +10,7 @@ Création d'une page web affichant un planning et des équipes selon des datas f
 
 ## Liens vers le site Web du projet
 
-[Cliquer moi pour avoir accès au site] (https://ottirate.github.io/docker-sae203/)
+(Cliquer moi pour avoir accès au site) [https://ottirate.github.io/docker-sae203/]
 
 ## Liens vers le depot du projet
-[Cliquer moi pour avoir accès au depot] (https://github.com/Ottirate/docker-sae203)
+(Cliquer moi pour avoir accès au depot) [https://github.com/Ottirate/docker-sae203]

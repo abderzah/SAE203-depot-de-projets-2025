@@ -12,9 +12,9 @@
 
 ## Liens vers le site web du projet
 
-[docker-sae203](https://Antoine-CARON.github.io/docker-SAE203/)
+[docker-sae203](https://Antoine-CARON.github.io/docker-sae203/)
 
 ## Liens vers le dépôt github du projet
 
-[docker-sae203](https://github.com/Antoine-CARON/docker-SAE203)
+[docker-sae203](https://github.com/Antoine-CARON/docker-sae203)
 

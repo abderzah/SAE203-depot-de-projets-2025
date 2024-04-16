@@ -1,25 +1,24 @@
-# Projet SAE 2.03 Equipe X
-_(Changez la X par votre numéro d'équipe)_
+# Projet SAE 2.03 Equipe 09
 
-## Titre du projet
-_(Le titre doit être court et descriptif)_
+## Titre du projet :
 
-- Installation d'un service Apache + MariaDB + PHP avec docker
+Installation d’un jeu en réseau en java avec docker.
 
-## Membres de l'équipe
-_(**Format :** Demi-groupe - NOM Prénom)_
+## Membre de l'équipe :
 
-- E2 - ZAHOUR Abderrazak
-- E2 - COLIN Jean-Yves
-- E2 - DUFLO Hugues
+B2 - Elliot Lebreton
+
+B1 - Clément Lemaire
+
+B2 - Ladji Dianissy
 
 ## Liens vers le site web du projet
 _(Le liens doit être ```https://<votre-utilisateur-github>.github.io/docker-sae203/```)_
 
-[docker-sae203](https://abderzah.github.io/lampDocker/)
+[docker-sae203](https://patricklegoat.github.io/docker-sae203/)
 
 ## Liens vers le dépôt github du projet
 _(Le liens doit être ```https://github.com/<votre-utilisateur-github>/docker-sae203/```)_
 
-[docker-sae203](https://github.com/abderzah/lampDocker)
+[docker-sae203](https://github.com/PatrickLeGoat/docker-sae203.git)
 

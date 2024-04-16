@@ -13,12 +13,8 @@ B1 - Clément Lemaire
 B2 - Ladji Dianissy
 
 ## Liens vers le site web du projet
-_(Le liens doit être ```https://<votre-utilisateur-github>.github.io/docker-sae203/```)_
-
 [docker-sae203](https://patricklegoat.github.io/docker-sae203/)
 
 ## Liens vers le dépôt github du projet
-_(Le liens doit être ```https://github.com/<votre-utilisateur-github>/docker-sae203/```)_
-
 [docker-sae203](https://github.com/PatrickLeGoat/docker-sae203.git)
 

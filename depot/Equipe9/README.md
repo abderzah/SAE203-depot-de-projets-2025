@@ -1,7 +1,6 @@
 # Projet SAE 2.03 Equipe 9
 
-## Titre du projet
-Jeu Morpion Multijoueur avec Chat
+## Jeu Morpion Multijoueur avec Chat
 
 - Installation d'un serveur avec Docker + Connexion Client a distance + Chat
 
